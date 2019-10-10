@@ -1,0 +1,40 @@
+############### 服务基础配置 ##########################
+server:
+  port: 8080
+############### 环境配置 ##########################
+spring:
+#  application:
+#    name:
+  profiles:
+    active: local
+#===============================  依赖本地项目组件  时配置开启|关闭 对应的中间键配置 ===============================#
+#support:
+#  redis:
+#    open: true #是否启动redis配置
+#  activemq:
+#    open: true #是否启用activemq
+#===============================  mybatis配置  ===============================#
+mybatis-plus:
+  mapper-locations: classpath:com/speasy/top/dao/mapping/*.xml     #mapper.xml扫描路径
+  typeAliasesPackage: com.soeasy.top.model              #扫描实体包路径
+  global-config:
+    id-type: 0  #0:数据库ID自增   1:用户输入id  2:全局唯一id(IdWorker)  3:全局唯一ID(uuid)
+    db-column-underline: false
+    refresh-mapper: true
+  configuration:
+    map-underscore-to-camel-case: true #实体驼峰下划线转换
+    cache-enabled: true #配置的缓存的全局开关
+    lazyLoadingEnabled: true #延时加载的开关
+    multipleResultSetsEnabled: true #开启的话，延时加载一个属性时会加载该对象全部属性，否则按需加载属性
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl #打印sql语句,调试用
+
+
+
+#===============================  log配置 ===============================#
+logging:
+  level.root: info
+  level:
+    com.soeasy.top.dao: debug
+  path: logs/
+  file: top.log
+  config: classpath:logback-spring.xml

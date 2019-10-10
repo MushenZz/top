@@ -1,0 +1,54 @@
+#===============================  spring配置 ===============================#
+spring:
+  datasource: #数据库配置
+    url: jdbc:mysql://localhost:3306/top?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    username: root
+    password: root
+    filters: log4j,wall,mergeStat
+    initialSize: 10
+    maxActive: 200
+    minIdle: 10
+    maxWait: 60000
+    connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+    useGlobalDataSourceStat: true
+  redis:      #缓存配置
+    host : 127.0.0.1                    # Redis服务器地址
+    port : 6379                            # Redis服务器连接端口
+    password :                             # Redis服务器连接密码（默认为空）
+    timeout : 2000                         # 连接超时时间（毫秒）
+  pool:
+    maxActive : 600                      # 连接池最大连接数（使用负值表示没有限制）
+    maxWait : 1000                       # 连接池最大阻塞等待时间（使用负值表示没有限制）
+    maxIdle : 300                        # 连接池中的最大空闲连接
+    minIdle : 0                          # 连接池中的最小空闲连接
+  activemq: #activemq 消息服务配置
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+    in-memory: true
+#===============================  log配置 ===============================#
+logging:
+  level.root: info
+  level.com.esgcc: debug
+  level:
+    com.gw.ard.taxi.dao: DEBUG
+  path: logs/
+  file: top.log
+
+
+#===============================  dubbo配置  ===============================#
+dubbo:
+  application:
+    name: ard-taxi
+  registry:
+    address: 172.26.139.215:2181                  #注册中心地址
+    protocol: zookeeper
+  protoco:
+    name: dubbo
+  scan:
+    base-packages: com.gw.ard.taxi.service   #扫描需要dubbo暴露服务的接口包
+  provider:
+    port: 20883                                   #dubbo通讯端口
+    timeout: 60000                                #超时时间毫秒
+    register: true                               #注册检查
+
