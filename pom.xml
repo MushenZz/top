@@ -11,6 +11,7 @@
     <groupId>com.soeasy</groupId>
     <artifactId>top</artifactId>
     <version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
     <modules>
         <module>top-admin</module>
         <module>top-common</module>
@@ -24,62 +25,101 @@
 
     <properties>
         <java.version>1.8</java.version>
+        <druid-spring-boot-starter.version>1.1.10</druid-spring-boot-starter.version>
+        <mysql-connector-java.version>8.0.15</mysql-connector-java.version>
+        <spring-boot-mybatis-plus>3.2.0</spring-boot-mybatis-plus>
+        <velocity-engine-core.version>2.1</velocity-engine-core.version>
+        <springfox-swagger2.version>2.7.0</springfox-swagger2.version>
+        <spring-boot.version>2.1.3.RELEASE</spring-boot.version>
+        <lombok.version>1.18.6</lombok.version>
+        <junit.version>4.12</junit.version>
     </properties>
+<dependencyManagement>
 
     <dependencies>
         <!--SpringBoot通用依赖模块-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-aop</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
+            <version>${spring-boot.version}</version>
             <scope>test</scope>
         </dependency>
         <!--集成druid连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-            <version>1.1.10</version>
+            <version>${druid-spring-boot-starter.version}</version>
         </dependency>
         <!--Mysql数据库驱动-->
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <version>8.0.15</version>
+            <version>${mysql-connector-java.version}</version>
         </dependency>
         <!--springboot-mybatis-plus集成-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-boot-starter</artifactId>
-            <version>3.2.0</version>
+            <version>${spring-boot-mybatis-plus}</version>
         </dependency>
         <!--mybatis-plus代码生成器 默认支持Velocity模板-->
         <dependency>
             <groupId>com.baomidou</groupId>
             <artifactId>mybatis-plus-generator</artifactId>
-            <version>3.2.0</version>
+            <version>${spring-boot-mybatis-plus}</version>
         </dependency>
         <!--mybatis-plus代码生成器所需要的模板支持-->
         <dependency>
             <groupId>org.apache.velocity</groupId>
             <artifactId>velocity-engine-core</artifactId>
-            <version>2.1</version>
+            <version>${velocity-engine-core.version}</version>
         </dependency>
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+        </dependency>
+        <!--Swagger-UI API文档生产工具-->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>${springfox-swagger2.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>${springfox-swagger2.version}</version>
+        </dependency>
+        <!--单元测试-->
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+        </dependency>
+        <!--redis依赖配置-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <version>${spring-boot.version}</version>
         </dependency>
     </dependencies>
+
+</dependencyManagement>
 
     <build>
         <plugins>

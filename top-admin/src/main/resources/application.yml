@@ -8,11 +8,13 @@ spring:
   profiles:
     active: local
 #===============================  依赖本地项目组件  时配置开启|关闭 对应的中间键配置 ===============================#
-#support:
-#  redis:
-#    open: true #是否启动redis配置
-#  activemq:
-#    open: true #是否启用activemq
+support:
+  redis:
+    open: true #是否启动redis配置
+  activemq:
+    open: true #是否启用activemq
+  swagger2:
+    open: true #是否启用swagger2
 #===============================  mybatis配置  ===============================#
 mybatis-plus:
   mapper-locations: classpath:com/speasy/top/model/mapping/*.xml     #mapper.xml扫描路径
