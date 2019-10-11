@@ -1,4 +1,4 @@
-package com.soeasy.top;
+package com.soeasy.top.admin;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

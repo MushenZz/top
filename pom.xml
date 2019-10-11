@@ -13,6 +13,9 @@
     <version>0.0.1-SNAPSHOT</version>
     <modules>
         <module>top-admin</module>
+        <module>top-common</module>
+        <module>top-support</module>
+        <module>top-admin-api</module>
     </modules>
 
 

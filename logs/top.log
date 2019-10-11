@@ -1,5 +1,5 @@
-[INFO]  2019-10-10 17:18:41.409  [main] | [com.soeasy.top.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 9660 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
-[INFO]  2019-10-10 17:18:41.416  [main] | [com.soeasy.top.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-10 17:18:41.409  [main] | [TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 9660 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-10 17:18:41.416  [main] | [TopAdminApplication: 679] 【The following profiles are active: local】
 [WARN]  2019-10-10 17:18:43.324  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.baomidou.mybatisplus.samples.quickstart.mapper]' package. Please check your configuration.】
 [INFO]  2019-10-10 17:18:43.672  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$56c2853a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
 [INFO]  2019-10-10 17:18:44.118  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
@@ -13,13 +13,40 @@
 [INFO]  2019-10-10 17:18:45.247  [main] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 171] 【Initializing ExecutorService 'applicationTaskExecutor'】
 [INFO]  2019-10-10 17:18:45.728  [main] | [o.s.boot.actuate.endpoint.web.EndpointLinksResolver: 59] 【Exposing 2 endpoint(s) beneath base path '/actuator'】
 [INFO]  2019-10-10 17:18:45.856  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 204] 【Tomcat started on port(s): 8080 (http) with context path ''】
-[INFO]  2019-10-10 17:18:45.862  [main] | [com.soeasy.top.TopAdminApplication: 59] 【Started TopAdminApplication in 5.515 seconds (JVM running for 6.621)】
-[INFO]  2019-10-10 17:18:45.877  [main] | [com.soeasy.top.TopAdminApplication: 20] 【Access URLs:
+[INFO]  2019-10-10 17:18:45.862  [main] | [TopAdminApplication: 59] 【Started TopAdminApplication in 5.515 seconds (JVM running for 6.621)】
+[INFO]  2019-10-10 17:18:45.877  [main] | [TopAdminApplication: 20] 【Access URLs:
 ----------------------------------------------------------
 	Local: 		http://127.0.0.1:8080
 	External: 	http://172.18.80.31:8080
 ----------------------------------------------------------】
-[INFO]  2019-10-10 17:18:45.879  [main] | [com.soeasy.top.TopAdminApplication: 25] 【AdminApplication  START SUCCESS ....】
+[INFO]  2019-10-10 17:18:45.879  [main] | [TopAdminApplication: 25] 【AdminApplication  START SUCCESS ....】
 [INFO]  2019-10-10 17:18:46.306  [RMI TCP Connection(2)-172.18.80.31] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring DispatcherServlet 'dispatcherServlet'】
 [INFO]  2019-10-10 17:18:46.307  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 524] 【Initializing Servlet 'dispatcherServlet'】
 [INFO]  2019-10-10 17:18:46.328  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 546] 【Completed initialization in 20 ms】
+[INFO]  2019-10-10 17:56:12.424  [Thread-16] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 208] 【Shutting down ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-10 17:56:12.427  [Thread-16] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 09:47:37.342  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 3080 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 09:47:37.347  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[WARN]  2019-10-11 09:47:38.642  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.baomidou.mybatisplus.samples.quickstart.mapper]' package. Please check your configuration.】
+[INFO]  2019-10-11 09:47:39.012  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d32ac156] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 09:47:39.419  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 09:47:39.449  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 09:47:39.449  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 09:47:39.457  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 09:47:39.581  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 09:47:39.582  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 2085 ms】
+[INFO]  2019-10-11 09:47:39.853  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 09:47:40.187  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[INFO]  2019-10-11 09:47:40.609  [main] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 171] 【Initializing ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-11 09:47:41.155  [main] | [o.s.boot.actuate.endpoint.web.EndpointLinksResolver: 59] 【Exposing 2 endpoint(s) beneath base path '/actuator'】
+[INFO]  2019-10-11 09:47:41.314  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 204] 【Tomcat started on port(s): 8080 (http) with context path ''】
+[INFO]  2019-10-11 09:47:41.325  [main] | [com.soeasy.top.admin.TopAdminApplication: 59] 【Started TopAdminApplication in 4.802 seconds (JVM running for 7.577)】
+[INFO]  2019-10-11 09:47:41.355  [main] | [com.soeasy.top.admin.TopAdminApplication: 20] 【Access URLs:
+----------------------------------------------------------
+	Local: 		http://127.0.0.1:8080
+	External: 	http://172.18.80.31:8080
+----------------------------------------------------------】
+[INFO]  2019-10-11 09:47:41.360  [main] | [com.soeasy.top.admin.TopAdminApplication: 25] 【AdminApplication  START SUCCESS ....】
+[INFO]  2019-10-11 09:47:41.855  [RMI TCP Connection(2)-172.18.80.31] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring DispatcherServlet 'dispatcherServlet'】
+[INFO]  2019-10-11 09:47:41.856  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 524] 【Initializing Servlet 'dispatcherServlet'】
+[INFO]  2019-10-11 09:47:41.881  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 546] 【Completed initialization in 24 ms】

@@ -1,4 +1,4 @@
-package com.soeasy.top.config;
+package com.soeasy.top.admin.config;
 
 import com.baomidou.mybatisplus.extension.plugins.PaginationInterceptor;
 import org.mybatis.spring.annotation.MapperScan;

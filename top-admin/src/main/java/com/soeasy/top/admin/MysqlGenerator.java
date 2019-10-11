@@ -1,4 +1,4 @@
-package com.soeasy.top;
+package com.soeasy.top.admin;
 
 import com.baomidou.mybatisplus.core.exceptions.MybatisPlusException;
 import com.baomidou.mybatisplus.core.toolkit.StringPool;

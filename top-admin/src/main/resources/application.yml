@@ -15,7 +15,7 @@ spring:
 #    open: true #是否启用activemq
 #===============================  mybatis配置  ===============================#
 mybatis-plus:
-  mapper-locations: classpath:com/speasy/top/dao/mapping/*.xml     #mapper.xml扫描路径
+  mapper-locations: classpath:com/speasy/top/model/mapping/*.xml     #mapper.xml扫描路径
   typeAliasesPackage: com.soeasy.top.model              #扫描实体包路径
   global-config:
     id-type: 0  #0:数据库ID自增   1:用户输入id  2:全局唯一id(IdWorker)  3:全局唯一ID(uuid)
