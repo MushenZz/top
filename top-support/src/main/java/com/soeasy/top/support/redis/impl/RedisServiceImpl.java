@@ -14,6 +14,7 @@ import java.util.concurrent.TimeUnit;
  * @author: ZhengZhe
  * @create: 2019-10-11 14:18
  */
+@Service
 public class RedisServiceImpl implements RedisService {
     @Autowired
     private StringRedisTemplate stringRedisTemplate;

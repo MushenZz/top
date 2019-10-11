@@ -32,7 +32,8 @@ public class TestController {
         System.out.println("访问成功!");
         redisService.set("001","存入redis的值");
         System.out.println("获取redis中存储的值");
-        redisService.get("001");
+        String s = redisService.get("001");
+        System.out.println(s);
         return "访问成功~";
     }
 }

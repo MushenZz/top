@@ -2138,3 +2138,836 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
 	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
 	... 19 common frames omitted
+[INFO]  2019-10-11 16:08:47.994  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 3036 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:08:48.001  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:08:49.412  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:08:49.416  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:08:49.453  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:08:49.572  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:08:49.926  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b0e5cf3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:08:50.425  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:08:50.459  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:08:50.460  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:08:50.471  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:08:50.617  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:08:50.618  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 2515 ms】
+[INFO]  2019-10-11 16:08:50.871  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:08:51.021  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:08:51.493  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:08:51.513  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:08:51.517  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:08:51.533  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:08:51.728  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:17)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:10:56.436  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 8464 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:10:56.440  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:10:58.521  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:10:58.526  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:10:58.571  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 16ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:10:58.749  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:10:59.209  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$ec555193] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:10:59.597  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:10:59.729  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:10:59.729  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:10:59.737  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:10:59.898  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:10:59.899  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3343 ms】
+[INFO]  2019-10-11 16:11:00.240  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:11:00.522  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:11:01.208  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:11:01.228  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:11:01.253  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:11:01.271  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:11:01.442  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:17)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:21:43.539  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 5944 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:21:43.544  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:21:45.373  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:21:45.376  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:21:45.406  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:21:45.564  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:21:46.056  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$caeec6d8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:21:46.496  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:21:46.634  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:21:46.635  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:21:46.642  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:21:46.766  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:21:46.767  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3047 ms】
+[INFO]  2019-10-11 16:21:46.978  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:21:47.135  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:21:47.814  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:21:47.852  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:21:47.872  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:21:47.889  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:21:48.064  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:17)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:22:15.672  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 6856 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:22:15.724  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:22:18.062  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:22:18.065  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:22:18.100  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:22:18.232  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:22:18.588  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c75a7fcd] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:22:18.945  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:22:19.069  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:22:19.070  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:22:19.077  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:22:19.200  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:22:19.201  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3347 ms】
+[INFO]  2019-10-11 16:22:19.425  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:22:19.584  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:22:20.082  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:22:20.099  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:22:20.103  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:22:20.119  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:22:20.293  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:17)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:24:05.496  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 9736 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:24:05.510  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:24:07.750  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:24:07.753  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:24:07.788  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:24:07.910  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:24:08.265  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$245d89d9] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:24:08.628  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:24:08.762  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:24:08.762  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:24:08.771  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:24:08.916  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:24:08.917  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3251 ms】
+[INFO]  2019-10-11 16:24:09.137  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:24:09.287  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:24:09.911  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:24:09.930  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:24:09.934  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:24:09.953  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:24:10.154  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:16)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:27:45.680  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 2112 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:27:45.685  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:27:48.371  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:27:48.374  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:27:48.394  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 7ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:27:48.499  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:27:48.786  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$8bb2d841] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:27:49.112  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:27:49.132  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:27:49.133  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:27:49.140  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:27:49.364  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:27:49.365  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3575 ms】
+[INFO]  2019-10-11 16:27:49.611  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:27:49.763  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:27:50.211  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:27:50.226  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:27:50.230  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:27:50.249  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:27:50.501  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:16)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:37:46.099  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 8640 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:37:46.108  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:37:47.653  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:37:47.656  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:37:47.685  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:37:47.804  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:37:48.284  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$a12f294a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:37:48.784  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:37:48.940  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:37:48.941  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:37:48.949  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:37:49.109  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:37:49.110  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 2878 ms】
+[INFO]  2019-10-11 16:37:49.341  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:37:49.496  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:37:49.990  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:37:50.010  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:37:50.014  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:37:50.031  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:37:50.298  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:40:49.156  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 5312 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:40:49.160  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:40:51.380  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:40:51.385  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:40:51.420  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 13ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:40:51.562  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:40:51.911  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$53661572] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:40:52.297  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:40:52.421  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:40:52.422  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:40:52.429  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:40:52.556  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:40:52.557  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3162 ms】
+[INFO]  2019-10-11 16:40:52.771  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:40:52.921  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:40:53.410  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:40:53.429  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:40:53.433  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:40:53.450  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:40:53.625  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:41:14.240  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 6540 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:41:14.264  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:41:15.616  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:41:15.619  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:41:15.661  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 25ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:41:15.778  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:41:16.092  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$b6743fd4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:41:16.488  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:41:16.521  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:41:16.522  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:41:16.531  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:41:16.778  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:41:16.778  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 2378 ms】
+[INFO]  2019-10-11 16:41:17.042  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:41:17.241  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[INFO]  2019-10-11 16:41:17.939  [main] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 171] 【Initializing ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-11 16:41:18.542  [main] | [o.s.boot.actuate.endpoint.web.EndpointLinksResolver: 59] 【Exposing 2 endpoint(s) beneath base path '/actuator'】
+[INFO]  2019-10-11 16:41:18.635  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 204] 【Tomcat started on port(s): 8080 (http) with context path ''】
+[INFO]  2019-10-11 16:41:18.639  [main] | [com.soeasy.top.admin.TopAdminApplication: 59] 【Started TopAdminApplication in 5.522 seconds (JVM running for 6.94)】
+[INFO]  2019-10-11 16:41:18.652  [main] | [com.soeasy.top.admin.TopAdminApplication: 17] 【Access URLs:
+----------------------------------------------------------
+	Local: 		http://127.0.0.1:8080
+	External: 	http://172.18.80.31:8080
+	Swagger2ui: 	http://127.0.0.1:8080/swagger-ui.html
+	----------------------------------------------------------】
+[INFO]  2019-10-11 16:41:18.652  [main] | [com.soeasy.top.admin.TopAdminApplication: 23] 【AdminApplication  START SUCCESS ....】
+[INFO]  2019-10-11 16:41:18.812  [RMI TCP Connection(1)-172.18.80.31] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring DispatcherServlet 'dispatcherServlet'】
+[INFO]  2019-10-11 16:41:18.813  [RMI TCP Connection(1)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 524] 【Initializing Servlet 'dispatcherServlet'】
+[INFO]  2019-10-11 16:41:18.832  [RMI TCP Connection(1)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 546] 【Completed initialization in 18 ms】
+[INFO]  2019-10-11 16:41:19.534  [RMI TCP Connection(3)-172.18.80.31] | [io.lettuce.core.EpollProvider: 68] 【Starting without optional epoll library】
+[INFO]  2019-10-11 16:41:19.537  [RMI TCP Connection(3)-172.18.80.31] | [io.lettuce.core.KqueueProvider: 70] 【Starting without optional kqueue library】
+[INFO]  2019-10-11 16:41:54.603  [Thread-16] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 208] 【Shutting down ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-11 16:41:55.724  [Thread-16] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:42:03.028  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 2272 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:42:03.034  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:42:04.489  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:42:04.492  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:42:04.519  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:42:04.658  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:42:05.059  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$80759b44] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:42:05.526  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:42:05.553  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:42:05.553  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:42:05.562  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:42:05.682  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:42:05.682  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 2527 ms】
+[INFO]  2019-10-11 16:42:05.906  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:42:06.053  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:42:06.517  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:42:06.539  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:42:06.543  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:42:06.581  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:42:06.750  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:16)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:46:01.272  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 9284 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:46:01.280  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:46:03.250  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:46:03.254  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:46:03.281  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:46:03.411  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:46:03.828  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$576d1462] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:46:04.299  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:46:04.463  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:46:04.464  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:46:04.480  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:46:04.635  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:46:04.636  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3190 ms】
+[INFO]  2019-10-11 16:46:04.852  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:46:05.006  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:46:05.503  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:46:05.521  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:46:05.526  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:46:05.543  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:46:05.711  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:46:23.390  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 9796 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:46:23.396  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:46:25.447  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:46:25.450  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:46:25.487  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 14ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:46:25.647  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:46:26.017  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4dc3987f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:46:26.414  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:46:26.543  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:46:26.544  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:46:26.553  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:46:26.676  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:46:26.676  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3168 ms】
+[INFO]  2019-10-11 16:46:26.933  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:46:27.127  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:46:27.724  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:46:27.745  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:46:27.748  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:46:27.765  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:46:27.966  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:14)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:47:23.274  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 7548 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:47:23.281  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:47:25.114  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:47:25.117  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:47:25.142  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:47:25.262  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:47:25.652  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$3396ed76] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:47:26.222  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:47:26.246  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:47:26.247  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:47:26.254  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:47:26.374  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:47:26.375  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3028 ms】
+[INFO]  2019-10-11 16:47:26.604  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:47:26.794  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:47:27.340  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:47:27.360  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:47:27.383  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:47:27.402  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:47:27.580  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:51:23.199  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 10964 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:51:23.205  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:51:25.041  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:51:25.044  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:51:25.070  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:51:25.197  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:51:25.767  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d34c214a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:51:26.352  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:51:26.377  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:51:26.378  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:51:26.385  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:51:26.505  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:51:26.506  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3202 ms】
+[INFO]  2019-10-11 16:51:26.742  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:51:26.893  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:51:27.430  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:51:27.452  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:51:27.457  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:51:27.479  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:51:27.736  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:52:54.276  [main] | [com.soeasy.top.admin.TopAdminApplication: 48] 【Starting TopAdminApplication on PC-201909011312 with PID 6136 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:52:54.281  [main] | [com.soeasy.top.admin.TopAdminApplication: 597] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:52:54.405  [main] | [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext: 583] 【Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@5c18016b: startup date [Fri Oct 11 16:52:54 CST 2019]; root of context hierarchy】
+[INFO]  2019-10-11 16:52:56.855  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 165] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[WARN]  2019-10-11 16:52:57.007  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[WARN]  2019-10-11 16:52:57.009  [main] | [o.s.context.annotation.ConfigurationClassPostProcessor: 373] 【Cannot enhance @Configuration bean definition 'propertySourcesPlaceholderConfigurer' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.】
+[INFO]  2019-10-11 16:52:57.854  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 325] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7c8aa1a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:52:58.490  [main] | [o.s.b.context.embedded.tomcat.TomcatEmbeddedServletContainer: 89] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:52:58.505  [main] | [org.apache.catalina.core.StandardService: 179] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:52:58.507  [main] | [org.apache.catalina.core.StandardEngine: 179] 【Starting Servlet Engine: Apache Tomcat/8.5.16】
+[INFO]  2019-10-11 16:52:58.663  [localhost-startStop-1] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 179] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:52:58.664  [localhost-startStop-1] | [org.springframework.web.context.ContextLoader: 276] 【Root WebApplicationContext: initialization completed in 4259 ms】
+[INFO]  2019-10-11 16:52:59.329  [localhost-startStop-1] | [org.springframework.boot.web.servlet.ServletRegistrationBean: 190] 【Mapping servlet: 'dispatcherServlet' to [/]】
+[INFO]  2019-10-11 16:52:59.331  [localhost-startStop-1] | [org.springframework.boot.web.servlet.ServletRegistrationBean: 190] 【Mapping servlet: 'statViewServlet' to [/druid/*]】
+[INFO]  2019-10-11 16:52:59.343  [localhost-startStop-1] | [org.springframework.boot.web.servlet.FilterRegistrationBean: 258] 【Mapping filter: 'metricsFilter' to: [/*]】
+[INFO]  2019-10-11 16:52:59.344  [localhost-startStop-1] | [org.springframework.boot.web.servlet.FilterRegistrationBean: 258] 【Mapping filter: 'characterEncodingFilter' to: [/*]】
+[INFO]  2019-10-11 16:52:59.344  [localhost-startStop-1] | [org.springframework.boot.web.servlet.FilterRegistrationBean: 258] 【Mapping filter: 'hiddenHttpMethodFilter' to: [/*]】
+[INFO]  2019-10-11 16:52:59.345  [localhost-startStop-1] | [org.springframework.boot.web.servlet.FilterRegistrationBean: 258] 【Mapping filter: 'httpPutFormContentFilter' to: [/*]】
+[INFO]  2019-10-11 16:52:59.345  [localhost-startStop-1] | [org.springframework.boot.web.servlet.FilterRegistrationBean: 258] 【Mapping filter: 'requestContextFilter' to: [/*]】
+[INFO]  2019-10-11 16:52:59.345  [localhost-startStop-1] | [org.springframework.boot.web.servlet.FilterRegistrationBean: 258] 【Mapping filter: 'webRequestLoggingFilter' to: [/*]】
+[INFO]  2019-10-11 16:52:59.346  [localhost-startStop-1] | [org.springframework.boot.web.servlet.FilterRegistrationBean: 271] 【Mapping filter: 'webStatFilter' to urls: [/*]】
+[INFO]  2019-10-11 16:52:59.346  [localhost-startStop-1] | [org.springframework.boot.web.servlet.FilterRegistrationBean: 258] 【Mapping filter: 'applicationContextIdFilter' to: [/*]】
+[WARN]  2019-10-11 16:52:59.439  [main] | [o.s.b.c.e.AnnotationConfigEmbeddedWebApplicationContext: 551] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:52:59.443  [main] | [org.apache.catalina.core.StandardService: 179] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:52:59.486  [main] | [o.s.b.a.logging.AutoConfigurationReportLoggingInitializer: 101] 【
+
+Error starting ApplicationContext. To display the auto-configuration report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:52:59.714  [main] | [o.s.boot.diagnostics.LoggingFailureAnalysisReporter: 42] 【
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field redisService in com.soeasy.top.admin.controller.TestController required a bean of type 'com.soeasy.top.support.redis.RedisService' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.soeasy.top.support.redis.RedisService' in your configuration.
+】
+[INFO]  2019-10-11 16:56:06.182  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 6100 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:56:06.189  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:56:08.083  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:56:08.088  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:56:08.114  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:56:08.233  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:56:08.635  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$756b3a2a] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:56:09.054  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:56:09.184  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:56:09.184  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:56:09.192  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:56:09.322  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:56:09.322  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3005 ms】
+[INFO]  2019-10-11 16:56:09.546  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:56:09.704  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[WARN]  2019-10-11 16:56:10.205  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}】
+[INFO]  2019-10-11 16:56:10.224  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:56:10.228  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[INFO]  2019-10-11 16:56:10.244  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 16:56:10.440  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'testController': Unsatisfied dependency expressed through field 'redisService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:849)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:877)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:549)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.soeasy.top.support.redis.RedisService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1654)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1213)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 19 common frames omitted
+[INFO]  2019-10-11 16:57:54.222  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 10136 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:57:54.227  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:57:55.850  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:57:55.853  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:57:55.880  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 10ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:57:56.006  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:57:56.384  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f723d6ce] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:57:56.776  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:57:56.904  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:57:56.905  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:57:56.912  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:57:57.050  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:57:57.050  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 2623 ms】
+[INFO]  2019-10-11 16:57:57.267  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:57:57.425  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[INFO]  2019-10-11 16:57:58.525  [main] | [o.s.boot.actuate.endpoint.web.EndpointLinksResolver: 59] 【Exposing 2 endpoint(s) beneath base path '/actuator'】
+[INFO]  2019-10-11 16:57:58.621  [main] | [s.d.spring.web.PropertySourcedRequestMappingHandlerMapping: 69] 【Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]】
+[INFO]  2019-10-11 16:57:58.800  [main] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 171] 【Initializing ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-11 16:57:59.412  [main] | [s.d.spring.web.plugins.DocumentationPluginsBootstrapper: 147] 【Context refreshed】
+[INFO]  2019-10-11 16:57:59.438  [main] | [s.d.spring.web.plugins.DocumentationPluginsBootstrapper: 150] 【Found 1 custom documentation plugin(s)】
+[INFO]  2019-10-11 16:57:59.487  [main] | [s.d.spring.web.scanners.ApiListingReferenceScanner: 41] 【Scanning for api listing references】
+[INFO]  2019-10-11 16:57:59.642  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 204] 【Tomcat started on port(s): 8080 (http) with context path ''】
+[INFO]  2019-10-11 16:57:59.646  [main] | [com.soeasy.top.admin.TopAdminApplication: 59] 【Started TopAdminApplication in 6.556 seconds (JVM running for 7.765)】
+[INFO]  2019-10-11 16:57:59.659  [main] | [com.soeasy.top.admin.TopAdminApplication: 17] 【Access URLs:
+----------------------------------------------------------
+	Local: 		http://127.0.0.1:8080
+	External: 	http://172.18.80.31:8080
+	Swagger2ui: 	http://127.0.0.1:8080/swagger-ui.html
+	----------------------------------------------------------】
+[INFO]  2019-10-11 16:57:59.660  [main] | [com.soeasy.top.admin.TopAdminApplication: 23] 【AdminApplication  START SUCCESS ....】
+[INFO]  2019-10-11 16:58:00.126  [RMI TCP Connection(2)-172.18.80.31] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring DispatcherServlet 'dispatcherServlet'】
+[INFO]  2019-10-11 16:58:00.126  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 524] 【Initializing Servlet 'dispatcherServlet'】
+[INFO]  2019-10-11 16:58:00.146  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 546] 【Completed initialization in 20 ms】
+[INFO]  2019-10-11 16:58:00.592  [RMI TCP Connection(3)-172.18.80.31] | [io.lettuce.core.EpollProvider: 68] 【Starting without optional epoll library】
+[INFO]  2019-10-11 16:58:00.595  [RMI TCP Connection(3)-172.18.80.31] | [io.lettuce.core.KqueueProvider: 70] 【Starting without optional kqueue library】
+[INFO]  2019-10-11 16:58:52.343  [Thread-18] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 208] 【Shutting down ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-11 16:58:53.481  [Thread-18] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 16:59:01.961  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 9780 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 16:59:01.966  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 16:59:03.891  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 16:59:03.893  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 16:59:03.923  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 12ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 16:59:04.072  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 16:59:04.461  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$101d7a22] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 16:59:04.888  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 16:59:05.013  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 16:59:05.014  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 16:59:05.022  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 16:59:05.165  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 16:59:05.166  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3079 ms】
+[INFO]  2019-10-11 16:59:05.386  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 16:59:05.541  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[INFO]  2019-10-11 16:59:06.591  [main] | [o.s.boot.actuate.endpoint.web.EndpointLinksResolver: 59] 【Exposing 2 endpoint(s) beneath base path '/actuator'】
+[INFO]  2019-10-11 16:59:06.707  [main] | [s.d.spring.web.PropertySourcedRequestMappingHandlerMapping: 69] 【Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]】
+[INFO]  2019-10-11 16:59:06.896  [main] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 171] 【Initializing ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-11 16:59:07.590  [main] | [s.d.spring.web.plugins.DocumentationPluginsBootstrapper: 147] 【Context refreshed】
+[INFO]  2019-10-11 16:59:07.625  [main] | [s.d.spring.web.plugins.DocumentationPluginsBootstrapper: 150] 【Found 1 custom documentation plugin(s)】
+[INFO]  2019-10-11 16:59:07.701  [main] | [s.d.spring.web.scanners.ApiListingReferenceScanner: 41] 【Scanning for api listing references】
+[INFO]  2019-10-11 16:59:07.921  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 204] 【Tomcat started on port(s): 8080 (http) with context path ''】
+[INFO]  2019-10-11 16:59:07.926  [main] | [com.soeasy.top.admin.TopAdminApplication: 59] 【Started TopAdminApplication in 7.631 seconds (JVM running for 9.258)】
+[INFO]  2019-10-11 16:59:07.944  [main] | [com.soeasy.top.admin.TopAdminApplication: 17] 【Access URLs:
+----------------------------------------------------------
+	Local: 		http://127.0.0.1:8080
+	External: 	http://172.18.80.31:8080
+	Swagger2ui: 	http://127.0.0.1:8080/swagger-ui.html
+	----------------------------------------------------------】
+[INFO]  2019-10-11 16:59:07.945  [main] | [com.soeasy.top.admin.TopAdminApplication: 23] 【AdminApplication  START SUCCESS ....】
+[INFO]  2019-10-11 16:59:08.319  [RMI TCP Connection(2)-172.18.80.31] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring DispatcherServlet 'dispatcherServlet'】
+[INFO]  2019-10-11 16:59:08.320  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 524] 【Initializing Servlet 'dispatcherServlet'】
+[INFO]  2019-10-11 16:59:08.341  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 546] 【Completed initialization in 21 ms】
+[INFO]  2019-10-11 16:59:09.040  [RMI TCP Connection(1)-172.18.80.31] | [io.lettuce.core.EpollProvider: 68] 【Starting without optional epoll library】
+[INFO]  2019-10-11 16:59:09.043  [RMI TCP Connection(1)-172.18.80.31] | [io.lettuce.core.KqueueProvider: 70] 【Starting without optional kqueue library】
