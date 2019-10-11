@@ -29,3 +29,19 @@ build/
 
 ### VS Code ###
 .vscode/
+/.idea/
+top-admin-api/src/main/
+top-admin/src/main/java/com/soeasy/top/admin/common/
+top-admin/src/main/java/com/soeasy/top/admin/component/
+top-admin/src/main/java/com/soeasy/top/admin/controller/
+top-admin/src/main/java/com/soeasy/top/admin/dao/
+top-admin/src/main/java/com/soeasy/top/admin/dto/
+top-admin/src/main/java/com/soeasy/top/admin/service/
+top-common/src/main/
+top-support/src/main/
+/.mvn/
+/mvnw.cmd
+/mvnw
+/HELP.md
+/top.iml
+/logs/

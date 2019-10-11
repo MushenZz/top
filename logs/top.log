@@ -50,3 +50,5 @@
 [INFO]  2019-10-11 09:47:41.855  [RMI TCP Connection(2)-172.18.80.31] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring DispatcherServlet 'dispatcherServlet'】
 [INFO]  2019-10-11 09:47:41.856  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 524] 【Initializing Servlet 'dispatcherServlet'】
 [INFO]  2019-10-11 09:47:41.881  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 546] 【Completed initialization in 24 ms】
+[INFO]  2019-10-11 09:54:05.264  [Thread-13] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 208] 【Shutting down ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-11 09:54:05.269  [Thread-13] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
