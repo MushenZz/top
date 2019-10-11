@@ -2971,3 +2971,435 @@ Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No q
 [INFO]  2019-10-11 16:59:08.341  [RMI TCP Connection(2)-172.18.80.31] | [org.springframework.web.servlet.DispatcherServlet: 546] 【Completed initialization in 21 ms】
 [INFO]  2019-10-11 16:59:09.040  [RMI TCP Connection(1)-172.18.80.31] | [io.lettuce.core.EpollProvider: 68] 【Starting without optional epoll library】
 [INFO]  2019-10-11 16:59:09.043  [RMI TCP Connection(1)-172.18.80.31] | [io.lettuce.core.KqueueProvider: 70] 【Starting without optional kqueue library】
+[INFO]  2019-10-11 17:38:11.367  [Thread-20] | [o.s.scheduling.concurrent.ThreadPoolTaskExecutor: 208] 【Shutting down ExecutorService 'applicationTaskExecutor'】
+[INFO]  2019-10-11 17:56:08.491  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 11084 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 17:56:08.499  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 17:56:11.000  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 17:56:11.003  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 17:56:11.049  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 22ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 17:56:11.202  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 17:56:11.651  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$6d1f5099] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:56:11.660  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:56:11.664  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@49cd946c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:56:11.666  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$91f3f34b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:56:11.670  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:56:11.697  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d471885f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:56:12.459  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 17:56:12.496  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 17:56:12.496  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 17:56:12.506  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 17:56:12.690  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 17:56:12.691  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3911 ms】
+[INFO]  2019-10-11 17:56:13.014  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 17:56:13.785  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[ERROR]  2019-10-11 17:56:15.039  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatStarter: 62] 【Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'jwtTokenUtil'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"】
+[INFO]  2019-10-11 17:56:15.105  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[WARN]  2019-10-11 17:56:15.128  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Create-686275377] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2443)】
+[WARN]  2019-10-11 17:56:15.129  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Destroy-686275377] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.druid.pool.DruidDataSource$DestroyConnectionThread.run(DruidDataSource.java:2540)】
+[WARN]  2019-10-11 17:56:15.133  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:251)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)】
+[WARN]  2019-10-11 17:56:15.144  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat】
+[INFO]  2019-10-11 17:56:15.283  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 17:56:15.315  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 17:56:15.348  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'jwtTokenUtil'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:193)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:188)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:170)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:89)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5125)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:928)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:455)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 67 common frames omitted
+[INFO]  2019-10-11 17:58:26.727  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 8076 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 17:58:26.732  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 17:58:28.876  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 17:58:28.879  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 17:58:28.907  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 11ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 17:58:29.052  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 17:58:29.459  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$c985854d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:58:29.471  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:58:29.478  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@412ebe64' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:58:29.484  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$ee5a27ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:58:29.489  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:58:29.513  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$30d7bd13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 17:58:30.080  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 17:58:30.107  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 17:58:30.108  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 17:58:30.116  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 17:58:30.247  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 17:58:30.248  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 3374 ms】
+[INFO]  2019-10-11 17:58:30.537  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 17:58:30.737  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[ERROR]  2019-10-11 17:58:31.387  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatStarter: 62] 【Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'jwtTokenUtil'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"】
+[INFO]  2019-10-11 17:58:31.417  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[WARN]  2019-10-11 17:58:31.421  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Create-315429532] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2443)】
+[WARN]  2019-10-11 17:58:31.422  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Destroy-315429532] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.druid.pool.DruidDataSource$DestroyConnectionThread.run(DruidDataSource.java:2540)】
+[WARN]  2019-10-11 17:58:31.422  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:251)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)】
+[WARN]  2019-10-11 17:58:31.426  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat】
+[INFO]  2019-10-11 17:58:31.462  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 17:58:31.477  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 17:58:31.487  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'jwtTokenUtil'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:193)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:188)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:170)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:89)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5125)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:928)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:455)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 67 common frames omitted
+[INFO]  2019-10-11 18:02:05.691  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 8456 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 18:02:05.699  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[WARN]  2019-10-11 18:02:07.277  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.support.BeanDefinitionOverrideException: Invalid bean definition with name 'jwtAuthenticationTokenFilter' defined in class path resource [com/soeasy/top/support/springsecurity/SecurityConfig.class]: Cannot register bean definition [Root bean: class [null]; scope=; abstract=false; lazyInit=false; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=securityConfig; factoryMethodName=jwtAuthenticationTokenFilter; initMethodName=null; destroyMethodName=(inferred); defined in class path resource [com/soeasy/top/support/springsecurity/SecurityConfig.class]] for bean 'jwtAuthenticationTokenFilter': There is already [Generic bean: class [com.soeasy.top.support.springsecurity.JwtAuthenticationTokenFilter]; scope=singleton; abstract=false; lazyInit=false; autowireMode=0; dependencyCheck=0; autowireCandidate=true; primary=false; factoryBeanName=null; factoryMethodName=null; initMethodName=null; destroyMethodName=null; defined in file [E:\develop\workspace\myspace\top\top-support\target\classes\com\soeasy\top\support\springsecurity\JwtAuthenticationTokenFilter.class]] bound.】
+[INFO]  2019-10-11 18:02:07.292  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 18:02:07.296  [main] | [o.s.boot.diagnostics.LoggingFailureAnalysisReporter: 42] 【
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The bean 'jwtAuthenticationTokenFilter', defined in class path resource [com/soeasy/top/support/springsecurity/SecurityConfig.class], could not be registered. A bean with that name has already been defined in file [E:\develop\workspace\myspace\top\top-support\target\classes\com\soeasy\top\support\springsecurity\JwtAuthenticationTokenFilter.class] and overriding is disabled.
+
+Action:
+
+Consider renaming one of the beans or enabling overriding by setting spring.main.allow-bean-definition-overriding=true
+】
+[INFO]  2019-10-11 18:02:44.823  [main] | [com.soeasy.top.admin.TopAdminApplication: 50] 【Starting TopAdminApplication on PC-201909011312 with PID 11244 (E:\develop\workspace\myspace\top\top-admin\target\classes started by Administrator in E:\develop\workspace\myspace\top)】
+[INFO]  2019-10-11 18:02:44.828  [main] | [com.soeasy.top.admin.TopAdminApplication: 679] 【The following profiles are active: local】
+[INFO]  2019-10-11 18:02:46.601  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 244] 【Multiple Spring Data modules found, entering strict repository configuration mode!】
+[INFO]  2019-10-11 18:02:46.604  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 126] 【Bootstrapping Spring Data repositories in DEFAULT mode.】
+[INFO]  2019-10-11 18:02:46.631  [main] | [o.s.data.repository.config.RepositoryConfigurationDelegate: 182] 【Finished Spring Data repository scanning in 9ms. Found 0 repository interfaces.】
+[WARN]  2019-10-11 18:02:46.769  [main] | [org.mybatis.spring.mapper.ClassPathMapperScanner: 44] 【No MyBatis mapper was found in '[com.soeasy.top.admin]' package. Please check your configuration.】
+[INFO]  2019-10-11 18:02:47.169  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$abbc09e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 18:02:47.178  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 18:02:47.182  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3e26482' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 18:02:47.184  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration' of type [org.springframework.security.config.annotation.method.configuration.GlobalMethodSecurityConfiguration$$EnhancerBySpringCGLIB$$d090ac97] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 18:02:47.188  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 18:02:47.209  [main] | [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker: 330] 【Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$130e41ab] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)】
+[INFO]  2019-10-11 18:02:47.732  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatWebServer: 90] 【Tomcat initialized with port(s): 8080 (http)】
+[INFO]  2019-10-11 18:02:47.761  [main] | [org.apache.catalina.core.StandardService: 173] 【Starting service [Tomcat]】
+[INFO]  2019-10-11 18:02:47.761  [main] | [org.apache.catalina.core.StandardEngine: 173] 【Starting Servlet engine: [Apache Tomcat/9.0.16]】
+[INFO]  2019-10-11 18:02:47.769  [main] | [org.apache.catalina.core.AprLifecycleListener: 173] 【The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [E:\develop\java_1.8\jdk1.8.0_162\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;E:\develop\java_1.8\jdk1.8.0_162\bin;E:\develop\java_1.8\jdk1.8.0_162\jre\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;E:\develop\git\Git\cmd;E:\develop\mysql_5.5\bin;E:\develop\MySQL Server 5.5\bin;C:\ProgramData\Oracle\Java\javapath;E:\develop\apache-maven-3.3.9\bin;E:\develop\node\;C:\Users\Administrator\AppData\Local\Microsoft\WindowsApps;E:\develop\Fiddler;C:\Users\Administrator\AppData\Roaming\npm;E:\develop\node\node;;.]】
+[INFO]  2019-10-11 18:02:47.892  [main] | [o.a.catalina.core.ContainerBase.[Tomcat].[localhost].[/]: 173] 【Initializing Spring embedded WebApplicationContext】
+[INFO]  2019-10-11 18:02:47.893  [main] | [org.springframework.web.context.ContextLoader: 296] 【Root WebApplicationContext: initialization completed in 2970 ms】
+[INFO]  2019-10-11 18:02:48.205  [main] | [c.a.d.spring.boot.autoconfigure.DruidDataSourceAutoConfigure: 56] 【Init DruidDataSource】
+[INFO]  2019-10-11 18:02:48.431  [main] | [com.alibaba.druid.pool.DruidDataSource: 930] 【{dataSource-1} inited】
+[ERROR]  2019-10-11 18:02:49.045  [main] | [org.springframework.boot.web.embedded.tomcat.TomcatStarter: 62] 【Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'jwtTokenUtil'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"】
+[INFO]  2019-10-11 18:02:49.074  [main] | [org.apache.catalina.core.StandardService: 173] 【Stopping service [Tomcat]】
+[WARN]  2019-10-11 18:02:49.078  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Create-2040301400] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.park(LockSupport.java:175)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.await(AbstractQueuedSynchronizer.java:2039)
+ com.alibaba.druid.pool.DruidDataSource$CreateConnectionThread.run(DruidDataSource.java:2443)】
+[WARN]  2019-10-11 18:02:49.079  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [Druid-ConnectionPool-Destroy-2040301400] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ java.lang.Thread.sleep(Native Method)
+ com.alibaba.druid.pool.DruidDataSource$DestroyConnectionThread.run(DruidDataSource.java:2540)】
+[WARN]  2019-10-11 18:02:49.079  [main] | [org.apache.catalina.loader.WebappClassLoaderBase: 173] 【The web application [ROOT] appears to have started a thread named [lettuce-eventExecutorLoop-1-1] but has failed to stop it. This is very likely to create a memory leak. Stack trace of thread:
+ sun.misc.Unsafe.park(Native Method)
+ java.util.concurrent.locks.LockSupport.parkNanos(LockSupport.java:215)
+ java.util.concurrent.locks.AbstractQueuedSynchronizer$ConditionObject.awaitNanos(AbstractQueuedSynchronizer.java:2078)
+ java.util.concurrent.LinkedBlockingQueue.poll(LinkedBlockingQueue.java:467)
+ io.netty.util.concurrent.SingleThreadEventExecutor.takeTask(SingleThreadEventExecutor.java:251)
+ io.netty.util.concurrent.DefaultEventExecutor.run(DefaultEventExecutor.java:64)
+ io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:905)
+ io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+ java.lang.Thread.run(Thread.java:748)】
+[WARN]  2019-10-11 18:02:49.082  [main] | [o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext: 557] 【Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat】
+[INFO]  2019-10-11 18:02:49.102  [main] | [com.alibaba.druid.pool.DruidDataSource: 1825] 【{dataSource-1} closed】
+[INFO]  2019-10-11 18:02:49.119  [main] | [o.s.b.a.logging.ConditionEvaluationReportLoggingListener: 142] 【
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.】
+[ERROR]  2019-10-11 18:02:49.129  [main] | [org.springframework.boot.SpringApplication: 858] 【Application run failed】
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:157)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:543)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:142)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:775)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:397)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:316)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1260)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1248)
+	at com.soeasy.top.admin.TopAdminApplication.main(TopAdminApplication.java:15)
+Caused by: org.springframework.boot.web.server.WebServerException: Unable to start embedded Tomcat
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:125)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.<init>(TomcatWebServer.java:86)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getTomcatWebServer(TomcatServletWebServerFactory.java:415)
+	at org.springframework.boot.web.embedded.tomcat.TomcatServletWebServerFactory.getWebServer(TomcatServletWebServerFactory.java:174)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:181)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:154)
+	... 8 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'jwtAuthenticationTokenFilter': Unsatisfied dependency expressed through field 'jwtTokenUtil'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:596)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:204)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.getOrderedBeansOfType(ServletContextInitializerBeans.java:235)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:193)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAsRegistrationBean(ServletContextInitializerBeans.java:188)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.addAdaptableBeans(ServletContextInitializerBeans.java:170)
+	at org.springframework.boot.web.servlet.ServletContextInitializerBeans.<init>(ServletContextInitializerBeans.java:89)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getServletContextInitializerBeans(ServletWebServerApplicationContext.java:261)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.selfInitialize(ServletWebServerApplicationContext.java:234)
+	at org.springframework.boot.web.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:54)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5125)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+	at org.apache.catalina.core.StandardHost.startInternal(StandardHost.java:831)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1377)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1367)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at org.apache.tomcat.util.threads.InlineExecutorService.execute(InlineExecutorService.java:75)
+	at java.util.concurrent.AbstractExecutorService.submit(AbstractExecutorService.java:134)
+	at org.apache.catalina.core.ContainerBase.startInternal(ContainerBase.java:902)
+	at org.apache.catalina.core.StandardEngine.startInternal(StandardEngine.java:262)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardService.startInternal(StandardService.java:423)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.core.StandardServer.startInternal(StandardServer.java:928)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:183)
+	at org.apache.catalina.startup.Tomcat.start(Tomcat.java:455)
+	at org.springframework.boot.web.embedded.tomcat.TomcatWebServer.initialize(TomcatWebServer.java:106)
+	... 13 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jwtTokenUtil': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:380)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1395)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:592)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:515)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:320)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:222)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:318)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:277)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1247)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	... 56 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'jwt.secret' in value "${jwt.secret}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:851)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1188)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1167)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:593)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:90)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:374)
+	... 67 common frames omitted
