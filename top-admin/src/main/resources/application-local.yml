@@ -1,7 +1,7 @@
 #===============================  spring配置 ===============================#
 spring:
   datasource: #数据库配置
-    url: jdbc:mysql://localhost:3306/top?useUnicode=true&characterEncoding=utf-8&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://localhost:3306/top?useUnicode=true&characterEncoding=utf-8&serverTimezone=Hongkong
     username: root
     password: root
     filters: log4j,wall,mergeStat
@@ -30,11 +30,6 @@ spring:
       expire:
         authCode: 120 # 验证码超期时间
   # 自定义jwt key
-  jwt:
-    tokenHeader: Authorization #JWT存储的请求头
-    secret: mySecret #JWT加解密使用的密钥
-    expiration: 604800 #JWT的超期限时间(60*60*24)
-    tokenHead: Bearer  #JWT负载中拿到开头
   pool:
     maxActive : 600                      # 连接池最大连接数（使用负值表示没有限制）
     maxWait : 1000                       # 连接池最大阻塞等待时间（使用负值表示没有限制）
@@ -54,6 +49,12 @@ logging:
   path: logs/
   file: top.log
 
+#===============================  jwt配置 ===============================#
+jwt:
+  tokenHeader: Authorization #JWT存储的请求头
+  secret: mySecret #JWT加解密使用的密钥
+  expiration: 604800 #JWT的超期限时间(60*60*24)
+  tokenHead: Bearer  #JWT负载中拿到开头
 
 #===============================  dubbo配置  ===============================#
 dubbo:

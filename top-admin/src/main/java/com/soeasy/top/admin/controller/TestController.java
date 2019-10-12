@@ -36,4 +36,22 @@ public class TestController {
         System.out.println(s);
         return "访问成功~";
     }
+
+    public void test(){
+
+//
+//            const newArray = [];
+//
+//                for (let i = 0; i < this.length; i++) {
+//                    for (let j = i + 1; j < this.length; j++) {
+//                        if (this[i] === this[j]) {
+//                            j = ++i;
+//                        }
+//                    }
+//                    newArray.push(this[i]);
+//                }
+//                return newArray;
+
+
+    }
 }

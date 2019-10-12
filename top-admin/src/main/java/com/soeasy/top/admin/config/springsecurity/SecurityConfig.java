@@ -1,4 +1,4 @@
-package com.soeasy.top.support.springsecurity;
+package com.soeasy.top.admin.config.springsecurity;
 
 /**
  * @program: top
@@ -22,12 +22,13 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+
 @Configuration
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled=true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 //    @Autowired
-//    private UmsAdminService adminService;
+//    private IUmsAdminService adminService;
     @Autowired
     private RestfulAccessDeniedHandler restfulAccessDeniedHandler;
     @Autowired
@@ -85,9 +86,10 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     public UserDetailsService userDetailsService() {
         //获取登录用户信息
         return username -> {
-//            UmsAdmin admin = adminService.getAdminByUsername(username);
+//            UmsAdminServiceImpl umsAdminService = new UmsAdminServiceImpl();
+//            UmsAdmin admin = umsAdminService.getAdminByUsername(username);
 //            if (admin != null) {
-//                List<UmsPermission> permissionList = adminService.getPermissionList(admin.getId());
+//                List<UmsPermission> permissionList = umsAdminService.getPermissionList(admin.getId());
 //                return new AdminUserDetails(admin,permissionList);
 //            }
             throw new UsernameNotFoundException("用户名或密码错误");

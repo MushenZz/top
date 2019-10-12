@@ -1,4 +1,4 @@
-package com.soeasy.top.support.springsecurity;
+package com.soeasy.top.admin.config.springsecurity;
 
 /**
  * @program: top
@@ -16,6 +16,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+
 @Component
 public class RestfulAccessDeniedHandler implements AccessDeniedHandler{
     @Override
